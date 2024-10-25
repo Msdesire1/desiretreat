@@ -1,22 +1,34 @@
-// "use client"
+import Caro from '@/comp/caro/Caro'
+import Navbar from '@/comp/nav/Navbar'
+import React from 'react'
 
-import Navbar from "@/comp/nav/Navbar";
-import Swiper from "@/comp/slider/Swiper";
-import 'bootstrap-icons/font/bootstrap-icons.css'
-// import "bootstrap-icons/font/bootstrap-icons.css";
-// import { useState } from "react";
+const page = () => {
 
-
-
-export default function Home() {
   return (
-<div>
-{/* <> */}
+    // <div>
+<>
 
+  {/*Topbar*/}
+  <div className="topbar">
+    <div className="container">
+      {/* <div className="row">
+        <div className="col-md-12">
+          <p className="pull-left hidden-xs">
+            Bistro Foods and Restaurant, the Best in Town
+          </p>
+          <p className="pull-right">
+            <i className="fa fa-phone" />
+            Order Online 111-123-6789
+          </p>
+        </div>
+      </div> */}
+    </div>
+  </div>
   {/*Header*/}
+
 <Navbar/>
   {/* REVOLUTION SLIDER */}
-<Swiper/>
+<Caro/>
   {/* END REVOLUTION SLIDER */}
   {/*Features Section*/}
   <section className="feature_wrap padding-half" id="specialities">
@@ -31,7 +43,7 @@ export default function Home() {
         <div className="col-md-3 col-sm-6 feature text-center ">
         <i class="bi bi-cup-straw"></i>
           <h3>
-            <a href="https://www.themesindustry.com/html/bistro/services.html">
+            <a href="">
               Dinner &amp; Dessert
             </a>
           </h3>
@@ -44,7 +56,7 @@ export default function Home() {
         <div className="col-md-3 col-sm-6 feature text-center">
         <i class="bi bi-cup-hot"></i>
           <h3>
-            <a href="https://www.themesindustry.com/html/bistro/services.html">
+            <a href="">
               Breakfast
             </a>
           </h3>
@@ -57,7 +69,7 @@ export default function Home() {
         <div className="col-md-3 col-sm-6 feature text-center">
        <i class="bi bi-cup-straw"></i>
           <h3>
-            <a href="https://www.themesindustry.com/html/bistro/services.html">
+            <a href="">
               Ice Shakes
             </a>
           </h3>
@@ -95,16 +107,11 @@ export default function Home() {
               <div className="item">
                 <div className="item_inner">
                   <div className="image">
-                    <img
-                      src="/image/food-1.jpg"
-                      alt="Services Image"
-                    />
-                    <a href="https://www.themesindustry.com/html/bistro/services.html" />
+                    <img src="/image/food-1.jpg" alt="Services Image" />
+                    <a href="services.html" />
                   </div>
                   <h3>
-                    <a href="https://www.themesindustry.com/html/bistro/services.html">
-                      Lorem ipsum dolor
-                    </a>
+                    <a href="services.html">Lorem ipsum dolor</a>
                   </h3>
                   <p>
                     Duis autem vel eum iriure dolor in hendrerit in vulputate
@@ -116,16 +123,11 @@ export default function Home() {
               <div className="item">
                 <div className="item_inner">
                   <div className="image">
-                    <img
-                      src="/image/food-2.jpg"
-                      alt="Services Image"
-                    />
-                    <a href="https://www.themesindustry.com/html/bistro/services.html" />
+                    <img src="/image/food-2.jpg" alt="Services Image" />
+                    <a href="services.html" />
                   </div>
                   <h3>
-                    <a href="https://www.themesindustry.com/html/bistro/services.html">
-                      Lorem samet
-                    </a>
+                    <a href="services.html">Lorem samet</a>
                   </h3>
                   <p>
                     Duis autem vel eum iriure dolor in hendrerit in vulputate
@@ -137,16 +139,11 @@ export default function Home() {
               <div className="item">
                 <div className="item_inner">
                   <div className="image">
-                    <img
-                      src="/image/food-3.jpg"
-                      alt="Services Image"
-                    />
-                    <a href="https://www.themesindustry.com/html/bistro/services.html" />
+                    <img src="/image/food-3.jpg" alt="Services Image" />
+                    <a href="services.html" />
                   </div>
                   <h3>
-                    <a href="https://www.themesindustry.com/html/bistro/services.html">
-                      Lorem ipsum dolor s amet
-                    </a>
+                    <a href="services.html">Lorem ipsum dolor s amet</a>
                   </h3>
                   <p>
                     Duis autem vel eum iriure dolor in hendrerit in vulputate
@@ -158,16 +155,11 @@ export default function Home() {
               <div className="item">
                 <div className="item_inner">
                   <div className="image">
-                    <img
-                      src="/image/food-4.jpg"
-                      alt="Services Image"
-                    />
-                    <a href="https://www.themesindustry.com/html/bistro/services.html" />
+                    <img src="/image/food-4.jpg" alt="Services Image" />
+                    <a href="services.html" />
                   </div>
                   <h3>
-                    <a href="https://www.themesindustry.com/html/bistro/services.html">
-                      Lorem samet
-                    </a>
+                    <a href="services.html">Lorem samet</a>
                   </h3>
                   <p>
                     Duis autem vel eum iriure dolor in hendrerit in vulputate
@@ -295,10 +287,7 @@ export default function Home() {
                 <div className="wrap-col">
                   <div className="item-container">
                     <div className="image">
-                      <img
-                        src="/image/gallery1.jpg"
-                        alt="cook"
-                      />
+                      <img src="/image/gallery1.jpg" alt="cook" />
                       <div className="overlay">
                         <a
                           className="video fancybox.iframe overlay-inner"
@@ -315,10 +304,7 @@ export default function Home() {
                 <div className="wrap-col">
                   <div className="item-container">
                     <div className="image">
-                      <img
-                        src="/image/galler2.jpg"
-                        alt="cook"
-                      />
+                      <img src="/image/galler2.jpg" alt="cook" />
                       <div className="overlay">
                         <a
                           className="fancybox overlay-inner"
@@ -336,10 +322,7 @@ export default function Home() {
                 <div className="wrap-col">
                   <div className="item-container">
                     <div className="image">
-                      <img
-                        src="/image/gallery3.jpg"
-                        alt="cook"
-                      />
+                      <img src="/image/gallery3.jpg" alt="cook" />
                       <div className="overlay">
                         <a
                           className="fancybox overlay-inner"
@@ -357,10 +340,7 @@ export default function Home() {
                 <div className="wrap-col">
                   <div className="item-container">
                     <div className="image">
-                      <img
-                        src="/image/gallery4.jpg"
-                        alt="cook"
-                      />
+                      <img src="/image/gallery4.jpg" alt="cook" />
                       <div className="overlay">
                         <a
                           className="fancybox overlay-inner"
@@ -378,10 +358,7 @@ export default function Home() {
                 <div className="wrap-col">
                   <div className="item-container">
                     <div className="image">
-                      <img
-                        src="/image/gallery5.jpg"
-                        alt="cook"
-                      />
+                      <img src="/image/gallery5.jpg" alt="cook" />
                       <div className="overlay">
                         <a
                           className="fancybox overlay-inner"
@@ -399,10 +376,7 @@ export default function Home() {
                 <div className="wrap-col">
                   <div className="item-container">
                     <div className="image">
-                      <img
-                        src="/image/gallery6.jpg"
-                        alt="cook"
-                      />
+                      <img src="/image/gallery6.jpg" alt="cook" />
                       <div className="overlay">
                         <a
                           className="fancybox overlay-inner"
@@ -420,10 +394,7 @@ export default function Home() {
                 <div className="wrap-col">
                   <div className="item-container">
                     <div className="image">
-                      <img
-                        src="/image/gallery7.jpg"
-                        alt="cook"
-                      />
+                      <img src="/image/gallery7.jpg" alt="cook" />
                       <div className="overlay">
                         <a
                           className="fancybox overlay-inner"
@@ -441,10 +412,7 @@ export default function Home() {
                 <div className="wrap-col">
                   <div className="item-container">
                     <div className="image">
-                      <img
-                        src="/image/gallery8.jpg"
-                        alt="cook"
-                      />
+                      <img src="/image/gallery8.jpg" alt="cook" />
                       <div className="overlay">
                         <a
                           className="video fancybox.iframe overlay-inner"
@@ -516,7 +484,7 @@ export default function Home() {
           data-wow-delay="1200ms"
         >
           <div className="counters-item  row">
-<i class="bi bi-cup"></i>
+           <i class="bi bi-cup"></i>
             {/* <i className="icon-coffee" /> */}
             <h2>
               <strong data-to={1350}>0</strong>
@@ -542,10 +510,7 @@ export default function Home() {
             <div id="our-cheffs" className="owl-carousel">
               <div className="item">
                 <div className="cheffs_wrap">
-                  <img
-                    src="/image/our-cheffs1.jpg"
-                    alt="Kitchen Staff"
-                  />
+                  <img src="/image/our-cheffs1.jpg" alt="Kitchen Staff" />
                   <h3>Stafeny Rose</h3>
                   <small>Head Of Kitchen</small>
                   <p>
@@ -556,10 +521,7 @@ export default function Home() {
               </div>
               <div className="item">
                 <div className="cheffs_wrap">
-                  <img
-                    src="/image/our-cheffs2.jpg"
-                    alt="Kitchen Staff"
-                  />
+                  <img src="/image/our-cheffs2.jpg" alt="Kitchen Staff" />
                   <h3>Michael Reubens</h3>
                   <small>Food Supervisor</small>
                   <p>
@@ -570,10 +532,7 @@ export default function Home() {
               </div>
               <div className="item">
                 <div className="cheffs_wrap">
-                  <img
-                    src="/image/our-cheffs3.jpg"
-                    alt="Kitchen Staff"
-                  />
+                  <img src="/image/our-cheffs3.jpg" alt="Kitchen Staff" />
                   <h3>Angle Maria</h3>
                   <small>Head Cook</small>
                   <p>
@@ -584,10 +543,7 @@ export default function Home() {
               </div>
               <div className="item">
                 <div className="cheffs_wrap">
-                  <img
-                    src="/image/our-cheffs1.jpg"
-                    alt="Kitchen Staff"
-                  />
+                  <img src="/image/our-cheffs1.jpg" alt="Kitchen Staff" />
                   <h3>Stafeny Rose</h3>
                   <small>Food Supervisor</small>
                   <p>
@@ -598,10 +554,7 @@ export default function Home() {
               </div>
               <div className="item">
                 <div className="cheffs_wrap">
-                  <img
-                    src="/image/our-cheffs2.jpg"
-                    alt="Kitchen Staff"
-                  />
+                  <img src="/image/our-cheffs2.jpg" alt="Kitchen Staff" />
                   <h3>David Miller</h3>
                   <small>Food Supervisor</small>
                   <p>
@@ -612,10 +565,7 @@ export default function Home() {
               </div>
               <div className="item">
                 <div className="cheffs_wrap">
-                  <img
-                    src="/image/our-cheffs3.jpg"
-                    alt="Kitchen Staff"
-                  />
+                  <img src="/image/our-cheffs3.jpg" alt="Kitchen Staff" />
                   <h3>Cristina Rose</h3>
                   <small>Food Supervisor</small>
                   <p>
@@ -693,7 +643,7 @@ export default function Home() {
                   <div className="col-md-6">
                     <div className="form-group">
                       <select className="form-control" id="deal" name="deal">
-                        <option value="Not Selected"> Select Deal </option>
+                        <option> Select Deal </option>
                         <option> Deal One ($200) </option>
                         <option> Deal Two ($500) </option>
                         <option> Deal Three ($900) </option>
@@ -746,10 +696,7 @@ export default function Home() {
             <div id="news-slider" className="owl-carousel">
               <div className="item">
                 <div className="news_content">
-                  <img
-                    src="/image/news-img3.jpg"
-                    alt="Docotor"
-                  />
+                  <img src="/image/news-img3.jpg" alt="Docotor" />
                   <div className="date_comment">
                     <span>
                       22<small>apr</small>
@@ -772,10 +719,7 @@ export default function Home() {
               </div>
               <div className="item">
                 <div className="news_content">
-                  <img
-                    src="/image/news-img2.jpg"
-                    alt="Docotor"
-                  />
+                  <img src="/image/news-img2.jpg" alt="Docotor" />
                   <div className="date_comment">
                     <span>
                       22<small>apr</small>
@@ -798,10 +742,7 @@ export default function Home() {
               </div>
               <div className="item">
                 <div className="news_content">
-                  <img
-                    src="/image/news-img1.jpg"
-                    alt="Docotor"
-                  />
+                  <img src="/image/news-img1.jpg" alt="Docotor" />
                   <div className="date_comment">
                     <span>
                       22<small>apr</small>
@@ -824,10 +765,7 @@ export default function Home() {
               </div>
               <div className="item">
                 <div className="news_content">
-                  <img
-                    src="/image/news-img3.jpg"
-                    alt="Docotor"
-                  />
+                  <img src="/image/news-img3.jpg" alt="Docotor" />
                   <div className="date_comment">
                     <span>
                       22<small>apr</small>
@@ -850,10 +788,7 @@ export default function Home() {
               </div>
               <div className="item">
                 <div className="news_content">
-                  <img
-                    src="/image/news-img2.jpg"
-                    alt="Docotor"
-                  />
+                  <img src="/image/news-img2.jpg" alt="Docotor" />
                   <div className="date_comment">
                     <span>
                       22<small>apr</small>
@@ -876,10 +811,7 @@ export default function Home() {
               </div>
               <div className="item">
                 <div className="news_content">
-                  <img
-                    src="/image/news-img1.jpg"
-                    alt="Docotor"
-                  />
+                  <img src="/image/news-img1.jpg" alt="Docotor" />
                   <div className="date_comment">
                     <span>
                       22<small>apr</small>
@@ -972,44 +904,28 @@ export default function Home() {
               <a href="index.html">Home</a>
             </li>
             <li>
-              <a href="https://www.themesindustry.com/html/bistro/blog.html">
-                Blog
-              </a>
+              <a href="blog.html">Blog</a>
             </li>
             <li>
-              <a href="https://www.themesindustry.com/html/bistro/about.html">
-                About Us
-              </a>
+              <a href="about.html">About Us</a>
             </li>
             <li>
-              <a href="https://www.themesindustry.com/html/bistro/location.html">
-                Locations
-              </a>
+              <a href="location.html">Locations</a>
             </li>
             <li>
-              <a href="https://www.themesindustry.com/html/bistro/menu.html">
-                Menu
-              </a>
+              <a href="menu.html">Menu</a>
             </li>
             <li>
-              <a href="https://www.themesindustry.com/html/bistro/faq.html">
-                Faq`&apos;`,s
-              </a>
+              <a href="faq.html">Faq`&apos;`s</a>
             </li>
             <li>
-              <a href="https://www.themesindustry.com/html/bistro/order.html">
-                Order Now
-              </a>
+              <a href="order.html">Order Now</a>
             </li>
             <li>
-              <a href="https://www.themesindustry.com/html/bistro/gallery.html">
-                Gallery
-              </a>
+              <a href="gallery.html">Gallery</a>
             </li>
             <li>
-              <a href="https://www.themesindustry.com/html/bistro/food.html">
-                Food
-              </a>
+              <a href="food.html">Food</a>
             </li>
           </ul>
         </div>
@@ -1067,7 +983,7 @@ export default function Home() {
       <div className="row">
         <div className="col-md-12">
           <div className="copyright clearfix">
-            <p>Copyright © 2024 Bistro. All Right Reserved</p>
+            <p>Copyright © 2016 Bistro. All Right Reserved</p>
             <ul className="social_icon">
               <li>
                 <a href="#" className="facebook">
@@ -1093,12 +1009,10 @@ export default function Home() {
   <a href="#" id="back-top">
     <i className="fa fa-angle-up fa-2x" />
   </a>
- </div>
-  );
+</>
+
+// </div>
+  )
 }
-
-
-
-
-
+export default page
 

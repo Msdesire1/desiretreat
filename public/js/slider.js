@@ -2,8 +2,8 @@
 
 
 
-
-//Main Slider Home
+   
+//Main Slider Home 
 var revapi;
 revapi = jQuery("#rev_slider").revolution({
     sliderType:"standard",
@@ -23,12 +23,12 @@ revapi = jQuery("#rev_slider").revolution({
              }
     },
     gridwidth:1170,
-    gridheight:640
-});
+    gridheight:640		
+});		
 
 
      //  TABS Slider
-         var tpj=jQuery;
+         var tpj=jQuery;					
             var revapi34;
             tpj(document).ready(function() {
                 if(tpj("#rev_slider_34_1").revolution == undefined){
@@ -105,8 +105,8 @@ revapi = jQuery("#rev_slider").revolution({
                             outof:"pause",
                             visible_area:"80%"
                         },
-
-
+                        
+                        
                         shadow:0,
                         spinner:"off",
                         stopLoop:"off",
@@ -127,15 +127,11 @@ revapi = jQuery("#rev_slider").revolution({
                     });
                 }
             });	/*ready*/
+            
 
 
 
 
-
-
-
-
-
-
-
-
+            
+                        
+            
