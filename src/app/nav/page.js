@@ -86,7 +86,7 @@ const Navbar =() => {
             <div
               className="md:flex sm:hidden space-x-4 items-center ps-40"
             >
-              <ul className="sm:hidden space-x-4 ps-40  text-2xl">
+              <ul className="sm:hidden space-x-4 ps-40 gap-20 text-2xl">
                 <li
                   className="relative"
                   onMouseEnter={handleMouseEnter1}
