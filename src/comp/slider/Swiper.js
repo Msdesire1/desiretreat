@@ -107,7 +107,7 @@ const Slider =() => {
               <span>Yes We Have</span> <br /> The Best Fish
               <span className="color">Steak</span>
             </h1>
-            <p className="mt-4 text-3xl text-white px-40">
+            <p className="mt-4 lg:text-3xl text-1xl text-white px-40">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, <br />
               sed diam nonummy nibh euismod.
             </p>
@@ -128,7 +128,7 @@ const Slider =() => {
               activeSlide === 1 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            <h1 className="text-[40px] font-bold text-white pt-[90px] justify-center flex items-center">
+            <h1 className="lg:text-[40px] text-[10px] font-bold text-white pt-[90px] justify-center flex items-center">
               <div>
                 <span className="text-center justify-center items-center flex mb-[-35px]">
                   DELICIOUS BAKERY ITEMS
@@ -138,7 +138,7 @@ const Slider =() => {
                 <span className="color">LEMON GRASS</span>
               </div>
             </h1>
-            <p className="mt-1 text-3xl text-white justify-center flex items-center">
+            <p className="mt-1 lg:text-3xl text-1xl text-white justify-center flex items-center">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, <br />
               sed diam nonummy nibh euismod.
             </p>
@@ -176,7 +176,7 @@ const Slider =() => {
                 <span className="color">Vegies</span>
               </div>
             </h1>
-            <p className="mt-1 text-3xl text-white justify-end flex items-end pr-28">
+            <p className="mt-1 lg:text-3xl text-1xl text-white justify-end flex items-end pr-28">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, <br />
               sed diam nonummy nibh euismod.
             </p>

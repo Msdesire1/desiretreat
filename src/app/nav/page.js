@@ -82,10 +82,11 @@ const Navbar =() => {
               <img src="/image/logo (1).png" alt="Logo" className="" />
             </Link>
             {/* Navbar menu for large screens */}
+
             <div
               className="md:flex sm:hidden space-x-4 items-center ps-40"
             >
-              <ul className="md:flex md:flex-row sm:hidden space-x-4 ps-20 gap-20 text-2xl">
+              <ul className="sm:hidden space-x-4 ps-40  text-2xl">
                 <li
                   className="relative"
                   onMouseEnter={handleMouseEnter1}
@@ -299,16 +300,16 @@ const Navbar =() => {
             </div>
 
 
-          </div>
+
 
           {/* Mobile menu, visible only on small screens */}
             <div
               className={`${
                 isMenuOpen ? "block" : "hidden"
-              } lg:hidden absolute top-16 left-0 w-full bg-white shadow-lg`}
+              } lg:hidden absolute top-16 left-0 w-full bg-white shadow-lg transition-all ease-in-out duration-300`}
               id="mobile-menu"
             >
-              <ul className="flex flex-col space-y-4 p-4">
+              <ul className="flex flex-col space-y-4 p-4 lg:block">
                 <li>
                   <a href="#" className="text-gray-700 ">
                     Home
@@ -351,6 +352,7 @@ const Navbar =() => {
                 </li>
               </ul>
             </div>
+        </div>
         </div>
       </nav>
     </header>

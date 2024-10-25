@@ -83,7 +83,7 @@ const Navbar = () => {
             </Link>
             {/* Navbar menu for large screens */}
             <div
-              className="md:flex sm:hidden space-x-4 items-center"
+              className="md:flex sm:hidden space-x-4 items-center "
             >
               <ul className="md:flex md:flex-row sm:hidden space-x-4 ps-40 gap-20 text-2xl">
                 <li
